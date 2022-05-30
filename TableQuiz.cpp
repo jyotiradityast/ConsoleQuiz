@@ -61,8 +61,8 @@ void ques(int i) //Function for questions.
   ans = x * y;
   do {
     system("clear");
-    cout << ">>Question " << i << " of 10-----\n\n";
-    cout << "How much is " << CYAN << x << RESET << " times " << CYAN << y << "?" << RESET
+    cout << "\n>>Question " << i << " of 10-----\n\n";
+    cout << "How much is " << CYAN << x << RESET << " times " << CYAN << y << "?\n" << RESET;
     cout << "Your Answer: ";
     cin >> response;
     if (response == ans) {
@@ -84,7 +84,7 @@ void ques(int i) //Function for questions.
 
 void start_screen() //Start Screen
 {
-  cout << RESET << "Welcome\nFor Difficulty Level 1, Enter 1\nFor Difficulty Level 2, Enter 2\n"
+  cout << RESET << "Welcome\nFor Difficulty Level 1, Enter 1\nFor Difficulty Level 2, Enter 2\n";
   cin >> diff;
   if (diff == 1) {
     d = 9;
@@ -107,9 +107,9 @@ void print_report() {
   cout << "Your Percentage= " << result << endl;
 
   if (result < 75) {
-    cout << CYAN << "\nNot Yet."
+    cout << CYAN << "\nNot Yet.";
   } else if (result >= 75) {
-    cout << GREEN << "\nCongratulations! You're ready to go to the next level."
+    cout << GREEN << "\nCongratulations! You're ready to go to the next level.";
   }
 }
 
